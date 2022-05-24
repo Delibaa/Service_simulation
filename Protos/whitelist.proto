@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server_simulation";
+
+import "google/protobuf/timestamp.proto";
+
+service Whitelist{
+  rpc Get_WhiteList(GetWhitelist_request) returns (WhiteListHostInfo){}
+}
+
+//Messages related to get whitelist 
+message GetWhitelist_request{
+    string endpoint = 1;
+    string publickey = 2;
+    string request = 3;
+}
+
+message WhiteListHostInfo{
+    string endpoint = 1;
+    string publickey = 2;
+    google.protobuf.Timestamp time = 3;
+}

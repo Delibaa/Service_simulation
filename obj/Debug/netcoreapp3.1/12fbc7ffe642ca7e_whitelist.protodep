@@ -1,0 +1,3 @@
+obj\Debug\netcoreapp3.1/Whitelist.cs \
+obj\Debug\netcoreapp3.1/WhitelistGrpc.cs: C:/Users/shy71/.nuget/packages/grpc.tools/2.23.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/whitelist.proto
